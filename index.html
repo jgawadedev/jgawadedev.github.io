@@ -15,18 +15,20 @@
         gtag('js', new Date());
         gtag('config', 'UA-194218626-1');
       </script>
-    
+    // Loads the Linker plugin
+    ga('require', 'linker');
+
+    // Instructs the Linker plugin to automatically add linker parameters
+    // to all links and forms pointing to the domain "destination.com".
+    ga('linker:autoLink', [localhost:3000], false, true);
 
 </head>
 
 <body>
 
-<img src="forkit.gif" id="octocat" alt="" />
-
-<!-- Feel free to change this text here -->
-
 <p>
   Wassup!
+  <a href="http://localhost:3000/login">Dev</a>
 </p>
 
 </body>
