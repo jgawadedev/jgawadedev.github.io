@@ -4,7 +4,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>GA</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
     
      <!-- Global Site Tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194218626-1"></script>
@@ -15,11 +14,11 @@
         gtag('js', new Date());
         gtag('config', 'UA-194218626-1');
         // Loads the Linker plugin
-    ga('require', 'linker');
+        ga('require', 'linker');
 
-    // Instructs the Linker plugin to automatically add linker parameters
-    // to all links and forms pointing to the domain "destination.com".
-    ga('linker:autoLink', [localhost:3000], false, true);
+         // Instructs the Linker plugin to automatically add linker parameters
+          // to all links and forms pointing to the domain "destination.com".
+          ga('linker:autoLink', ['localhost:3000'], false, true);
       </script>
     
 
